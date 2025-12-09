@@ -35,7 +35,7 @@ function App() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
-          className="fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-colors md:hidden z-50"
+          className="fixed bottom-4 right-4 btn-primary md:hidden z-50 text-lg px-6 py-3"
           onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
         >
           Request Demo
