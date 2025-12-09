@@ -5,7 +5,7 @@ import { CheckCircle } from 'lucide-react';
 const About = () => {
   const highlights = [
     'Computer-Based Testing (CBT) Platform',
-    '6+ Schools Successfully Deployed',
+    '5+ Schools Successfully Deployed',
     '400+ Active Users',
     'Cost-Efficient Solutions',
   ];

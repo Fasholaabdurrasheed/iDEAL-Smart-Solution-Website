@@ -63,7 +63,7 @@ const Hero = () => {
           className="mt-20 flex flex-wrap justify-center gap-12 text-center"
         >
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-[#00a8e8]">6+</div>
+            <div className="text-3xl md:text-4xl font-bold text-[#00a8e8]">5+</div>
             <div className="text-gray-600 font-medium">Schools Live</div>
           </div>
           <div>
@@ -78,7 +78,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
+      {/* <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
@@ -90,7 +90,7 @@ const Hero = () => {
             className="w-1 h-2 bg-[#00a8e8] rounded-full"
           />
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

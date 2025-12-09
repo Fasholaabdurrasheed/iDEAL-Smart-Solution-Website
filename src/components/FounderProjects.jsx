@@ -9,6 +9,7 @@ const projects = [
     icon: Home,
     gradient: 'from-emerald-500 to-teal-500',
     link: '#',
+    logo: '/src/assets/Vector.png',
   },
   {
     title: 'Commerza',
@@ -23,6 +24,7 @@ const projects = [
     icon: Globe2,
     gradient: 'from-purple-500 to-pink-500',
     link: '#',
+    logo: '/src/assets/TBP_logo.jpeg',
   },
 ];
 
@@ -62,11 +64,17 @@ const FounderProjects = () => {
                 {/* Background gradient on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
 
-                {/* Icon */}
+                {/* Icon or Logo */}
                 <div className="relative mb-6">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${project.gradient} p-3.5 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}>
-                    <Icon className="w-full h-full text-white" strokeWidth={1.5} />
-                  </div>
+                  {project.logo ? (
+                    <div className="w-16 h-16 rounded-2xl bg-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 flex items-center justify-center p-2">
+                      <img src={project.logo} alt={`${project.title} logo`} className="w-full h-full object-contain" />
+                    </div>
+                  ) : (
+                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${project.gradient} p-3.5 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}>
+                      <Icon className="w-full h-full text-white" strokeWidth={1.5} />
+                    </div>
+                  )}
                 </div>
 
                 {/* Content */}
