@@ -15,7 +15,7 @@ const founders = [
     name: "Bello Sherifdeen",
     role: "Co-Founder (Product & Education) & CEO",
     avatar: "/assets/sherifdeen's_passport.jpg",
-    description: "An experienced teacher, education strategist, and product manager who brings practical classroom insight into our products. Together, we combine technical expertise, product management excellence, and real teaching experience to build powerful, easy-to-use education technology systems that transform learning across Africa.",
+    description: "An experienced teacher, education strategist, and product manager who brings practical industry insight into our products. Together, we combine technical expertise, product management excellence, and domain knowledge to build powerful, easy-to-use software solutions that transform businesses, institutions, and communities across Africa.",
     linkedin: "https://linkedin.com/in/sherifdeenbello",
     twitter: "https://twitter.com/bello_edu"
   }

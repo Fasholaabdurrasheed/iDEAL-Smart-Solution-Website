@@ -17,9 +17,9 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-gray-800 font-sans">
+    <div className="min-h-screen bg-white text-gray-800 font-sans overflow-x-hidden">
       <Navbar />
-      <main>
+      <main className="overflow-x-hidden">
         <Hero />
         <About />
         <Services />
@@ -29,18 +29,6 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      {/* Floating Request Demo button on mobile */}
-      <AnimatePresence>
-        <motion.button
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 50 }}
-          className="fixed bottom-4 right-4 btn-primary md:hidden z-50 text-lg px-6 py-3"
-          onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-        >
-          Request Demo
-        </motion.button>
-      </AnimatePresence>
     </div>
   );
 }

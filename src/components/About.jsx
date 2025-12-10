@@ -4,10 +4,10 @@ import { CheckCircle } from 'lucide-react';
 
 const About = () => {
   const highlights = [
-    'Computer-Based Testing (CBT) Platform',
-    '5+ Schools Successfully Deployed',
-    '400+ Active Users',
-    'Cost-Efficient Solutions',
+    'Custom Software Development',
+    'Education Technology Products',
+    'Enterprise Solutions',
+    'Healthcare Innovation (Coming Soon)',
   ];
 
   return (
@@ -23,7 +23,7 @@ const About = () => {
             <span className="text-[#00a8e8] font-semibold text-sm">About iDEAL</span>
           </div>
           <h2 className="section-title max-w-3xl mx-auto">
-            Transforming Education in Nigeria with Technology
+            Building Digital Solutions for Businesses & Institutions
           </h2>
         </motion.div>
 
@@ -35,13 +35,13 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-lg text-gray-700 leading-relaxed">
-              iDEAL Smart Solution is a technology company focused on building innovative and affordable digital solutions for the education sector in Nigeria.
+              iDEAL Smart Solution is a technology company specializing in custom software development, enterprise solutions, and digital products for businesses and institutions across Nigeria and Africa.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              We started by developing a Computer-Based Testing (CBT) platform that helps schools reduce exam costs, save teachers' time, and eliminate the stress of manual grading.
+              We currently have products in education technology, including our Computer-Based Testing (CBT) platform and School Management Portal. We also build custom software solutions for businesses, enterprise systems, and are expanding into healthcare technology.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Today, our solution is actively used by 6 schools with over 400+ users (students and staff combined).
+              Our education products are actively used by 6+ schools with over 400+ users. Beyond education, we deliver tailored software solutions for various industries and businesses.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">

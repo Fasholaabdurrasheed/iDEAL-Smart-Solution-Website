@@ -1,7 +1,7 @@
 // src/components/Contact.jsx
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mail, Building2, User, MessageSquare, MapPin, Phone } from 'lucide-react';
+import { Send, Mail, Building2, User, MessageSquare, MapPin, Phone, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,6 +32,7 @@ const Contact = () => {
   const contactInfo = [
     { icon: Mail, label: 'Email', value: 'idealsolutionsupt@gmail.com', href: 'mailto:idealsolutionsupt@gmail.com' },
     { icon: Phone, label: 'Phone', value: '+234 814 296 5634', href: 'tel:+2348142965634' },
+    { icon: MessageCircle, label: 'WhatsApp', value: '+234 814 296 5634', href: 'https://wa.me/2348142965634' },
     { icon: MapPin, label: 'Location', value: 'Ibadan, Nigeria', href: '#' },
   ];
 

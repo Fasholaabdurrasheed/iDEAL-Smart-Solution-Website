@@ -65,7 +65,7 @@ const CaseStudies = () => {
           <p className="section-subtitle">Our Impact</p>
           <h2 className="section-title">Why Schools Trust iDEAL</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mt-4">
-            Proven results and trusted by institutions across Africa
+            Proven results and trusted by Schools across Nigeria
           </p>
         </motion.div>
 
@@ -116,7 +116,7 @@ const CaseStudies = () => {
               "iDEAL Smart Solution has revolutionized how we manage assessments and administrative tasks. 
               The platform is <span className="text-[#00a8e8] font-semibold">reliable, secure, and easy to use</span> for both staff and students."
             </p>
-            <p className="text-gray-600 mt-4 font-medium">— School Administrator, Lagos</p>
+            <p className="text-gray-600 mt-4 font-medium">— School Administrator, Ibadan</p>
           </div>
         </motion.div>
       </div>

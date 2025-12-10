@@ -18,14 +18,14 @@ const projects = [
     gradient: 'from-blue-500 to-cyan-500',
     link: '#',
   },
-  {
-    title: 'TBP (The Borderless Project)',
-    description: 'A global connectivity platform for strategists working within the US$10 Trillion+ Neo-Polar Neutrality Global System — supporting global trade corridors and digital/physical protocol interoperability.',
-    icon: Globe2,
-    gradient: 'from-purple-500 to-pink-500',
-    link: '#',
-    logo: '/assets/TBP_logo.jpeg',
-  },
+  // {
+  //   title: 'TBP (The Borderless Project)',
+  //   description: 'A global connectivity platform for strategists working within the US$10 Trillion+ Neo-Polar Neutrality Global System — supporting global trade corridors and digital/physical protocol interoperability.',
+  //   icon: Globe2,
+  //   gradient: 'from-purple-500 to-pink-500',
+  //   link: '#',
+  //   logo: '/assets/TBP_logo.jpeg',
+  // },
 ];
 
 const FounderProjects = () => {

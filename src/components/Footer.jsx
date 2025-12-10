@@ -8,7 +8,8 @@ import {
   Phone,
   MapPin,
   Heart,
-  ArrowUp
+  ArrowUp,
+  MessageCircle
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -20,10 +21,10 @@ const Footer = () => {
   const quickLinks = ['About', 'Services', 'Case Studies', 'Products', 'Founders', 'Contact'];
   
   const socialLinks = [
-    { icon: Facebook, href: 'https://facebook.com/idealsmartsolution', color: 'hover:bg-[#1877f2]', label: 'Facebook' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61584542691264', color: 'hover:bg-[#1877f2]', label: 'Facebook' },
     { icon: Twitter, href: 'https://twitter.com/ideal_tech', color: 'hover:bg-[#1da1f2]', label: 'Twitter' },
     { icon: Linkedin, href: 'https://linkedin.com/company/ideal-smart-solution', color: 'hover:bg-[#0077b5]', label: 'LinkedIn' },
-    { icon: Instagram, href: 'https://instagram.com/ideal_tech', color: 'hover:bg-gradient-to-r hover:from-[#f58529] hover:via-[#dd2a7b] hover:to-[#8134af]', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/p/DRj3hYKiDYG/?igsh=MWUxMHZhajc3cG95Nw==', color: 'hover:bg-gradient-to-r hover:from-[#f58529] hover:via-[#dd2a7b] hover:to-[#8134af]', label: 'Instagram' },
   ];
 
   return (
@@ -107,6 +108,15 @@ const Footer = () => {
                 <Phone className="w-5 h-5 flex-shrink-0 group-hover:scale-110 transition-transform" />
                 <span className="text-sm">+234 814 296 5634</span>
               </a>
+              <a 
+                href="https://wa.me/2348142965634"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-400 hover:text-[#25D366] transition-colors group"
+              >
+                <MessageCircle className="w-5 h-5 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span className="text-sm">WhatsApp</span>
+              </a>
               <div className="flex items-start gap-3 text-gray-400">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">Ibadan, Nigeria</span>
@@ -145,7 +155,7 @@ const Footer = () => {
               })}
             </div>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Building the future of education in Africa, one school at a time.
+              Building innovative software solutions for African businesses, institutions, and beyond.
             </p>
           </motion.div>
         </div>

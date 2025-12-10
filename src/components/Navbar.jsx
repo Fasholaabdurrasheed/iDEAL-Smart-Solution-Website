@@ -25,10 +25,10 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'glass-card shadow-xl py-4 mx-4 mt-2 rounded-3xl' : 'py-6 md:py-8'
+        scrolled ? 'glass-card shadow-xl py-3 mx-2 md:mx-4 mt-2 rounded-2xl md:rounded-3xl' : 'py-4 md:py-8 bg-white/95 backdrop-blur-sm'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-3 md:px-6 flex justify-between items-center">
         {/* Logo */}
         <motion.div 
           className="flex items-center gap-2"
@@ -37,7 +37,7 @@ const Navbar = () => {
           <img 
             src="/assets/iDEAL_logo.png" 
             alt="iDEAL Smart Solution" 
-            className="h-10 w-auto" 
+            className="h-8 md:h-10 w-auto" 
           />
         </motion.div>
 
@@ -57,8 +57,18 @@ const Navbar = () => {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
-          <button className="btn-secondary">Contact Us</button>
-          <button className="btn-primary">Request Demo</button>
+          <button 
+            className="btn-secondary"
+            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+          >
+            Contact Us
+          </button>
+          <button 
+            className="btn-primary"
+            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+          >
+            Request Demo
+          </button>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -81,7 +91,7 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="md:hidden absolute top-20 left-4 right-4 bg-white rounded-2xl shadow-xl p-6 border border-gray-100"
+          className="md:hidden absolute top-full left-2 right-2 mt-2 bg-white rounded-2xl shadow-xl p-4 border border-gray-100"
         >
           <nav className="space-y-4">
             {navLinks.map((link) => (
@@ -96,8 +106,24 @@ const Navbar = () => {
             ))}
           </nav>
           <div className="flex gap-3 mt-6 pt-6 border-t border-gray-100">
-            <button className="btn-secondary flex-1">Contact</button>
-            <button className="btn-primary flex-1">Demo</button>
+            <button 
+              className="btn-secondary flex-1"
+              onClick={() => {
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                setMobileMenuOpen(false);
+              }}
+            >
+              Contact
+            </button>
+            <button 
+              className="btn-primary flex-1"
+              onClick={() => {
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                setMobileMenuOpen(false);
+              }}
+            >
+              Demo
+            </button>
           </div>
         </motion.div>
       )}

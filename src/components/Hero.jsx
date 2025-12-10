@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 px-4">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-30 px-4">
       {/* Animated Background Blobs */}
       <div className="absolute inset-0 -z-10">
         <motion.div
@@ -25,18 +25,18 @@ const Hero = () => {
         >
           {/* Badge */}
           <div className="inline-flex items-center bg-blue-50 border border-blue-200 rounded-full px-6 py-2 mb-6">
-            <span className="text-[#00a8e8] font-medium text-sm">✨ Transforming Education Technology</span>
+            <span className="text-[#00a8e8] font-medium text-sm">✨ Building Digital Solutions Across Industries</span>
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-900 mb-6">
             Building Innovative & Affordable{' '}
             <span className="text-[#00a8e8]">Digital Solutions</span>
             <br />
-            for Schools in Nigeria
+            for Schools & Businesses in Africa
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 mt-6 max-w-4xl mx-auto leading-relaxed">
-            From CBT exams to school portals — we help schools save time, reduce costs, and improve learning outcomes with cutting-edge technology.
+            From education technology (CBT & school portals) to enterprise solutions and healthcare innovations — we build custom software that transforms businesses and institutions across Africa.
           </p>
         </motion.div>
 
@@ -47,10 +47,16 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <button className="btn-primary text-lg px-10 py-4 whitespace-nowrap">
+          <button 
+            className="btn-primary text-lg px-10 py-4 whitespace-nowrap"
+            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+          >
             Request a Demo
           </button>
-          <button className="btn-secondary text-lg px-10 py-4">
+          <button 
+            className="btn-secondary text-lg px-10 py-4"
+            onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
+          >
             Learn More
           </button>
         </motion.div>
